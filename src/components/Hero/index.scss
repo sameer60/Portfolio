@@ -21,6 +21,10 @@
     font-size: 3rem;
     line-height: 1.1;
     max-width: 85%;
+
+    &::selection { 
+        background-color: #0ab0f2;
+    }
 }
 .hero-name{
     color: #fff;
@@ -45,10 +49,19 @@
     font-size: 1.1rem;
     line-height: 1.7;
     color: #525354;
+
+    &::selection { 
+        background-color: lighten($color: #0ab0f2, $amount: 40);
+    }
 }
 .hero-image{
     border-radius: 50%;
-    filter: drop-shadow(2px 2px 10px #42f5f2);
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+        filter: drop-shadow(2px 2px 10px #42f5f2);
+        scale: 1.05;
+    }
 }
 .get-in-touch-button{
     cursor: pointer;
@@ -61,18 +74,17 @@
     width: 136px;
     border: 0px;
     border-radius: 10px;
-    /* background: #f5edfc; */
     font-weight: bold;
     font-size: 1rem;
     font-family: Josefin Sans;
-    /* box-shadow: -3px -3px 25px 5px #fff, 5px 5px 13px 7px #c8d0e7; */
     background: #E4EBF5;
     box-shadow:  5px 5px 10px #dad3e0,
              -3px -3px 10px #ffffff;
-}
-.get-in-touch-button:active {
-    box-shadow: inset 5px 5px 7px 0 #c8d0e7,
-        inset -6px -6px 10px 0 white;
+
+    &:active {
+        box-shadow: inset 5px 5px 7px 0 #c8d0e7,
+            inset -6px -6px 10px 0 white;
+    }
 }
 .skills-container{
     display: flex;
@@ -93,8 +105,13 @@
 }
 .skill-icon{
     font-size: 82px;
-    color: #313233;
-    filter: drop-shadow(2px 2px 3px black);
+    color: lighten($color: #525354, $amount: 10);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        filter: drop-shadow(1px 1px 2px black);
+        color: #313233;
+    }
 }
 .skill-name{
     margin-top: 0.2rem;

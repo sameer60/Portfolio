@@ -1,12 +1,10 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { motion } from "framer-motion";
 import emailLottie from "../../assets/emailLottie.json";
 import MessageSentLottie from "../../assets/MessageSentLottie.json";
-import birdsLottie from "../../assets/birdsLottie.json";
 import clouds from "../../assets/clouds.json";
 import Lottie from "lottie-react";
-import "./index.css";
+import "./index.scss";
 
 export const Contact = () => {
   const form = useRef();
@@ -36,11 +34,8 @@ export const Contact = () => {
   return (
     <div id="contact" className="contact-container">
       <div className="lotties-wrapper">
-        <Lottie className="birds" animationData={birdsLottie} />
         <Lottie className="cloud1" animationData={clouds} />
-        <Lottie className="birds" animationData={birdsLottie} />
         <Lottie className="cloud2" animationData={clouds} />
-        <Lottie className="birds" animationData={birdsLottie} />
         <Lottie className="cloud2" animationData={clouds} />
       </div>
       <div className="contact-box">

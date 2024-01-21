@@ -63,16 +63,16 @@
     padding-left: 1rem;
     font-family: poppins;
     font-weight: 600;
-}
-.input-field::placeholder {
-    font-family: poppins;
-    padding-left: 1rem;
-    font-weight: 500;
-    color: #7d8083;
-}
-.input-field:focus {
-    outline: none;
-    padding-left: 1rem;
+    &::placeholder {
+        font-family: poppins;
+        padding-left: 1rem;
+        font-weight: 500;
+        color: #7d8083;
+    }
+    &:focus {
+        outline: none;
+        padding-left: 1rem;
+    }
 }
 .textarea-field{
     height: 136px;
@@ -86,13 +86,13 @@
     font-family: poppins;
     font-weight: 600;
     resize: none;
-}
-.textarea-field:focus{
-    outline: none;
-}
-.textarea-field::placeholder{
-    font-weight: 500;
-    color: #7d8083;
+    &:focus{
+        outline: none;
+    }
+    &::placeholder{
+        font-weight: 500;
+        color: #7d8083;
+    }
 }
 a{
     text-decoration: none;
@@ -110,6 +110,10 @@ a{
     filter: drop-shadow(2px 2px 3px #313233);
     border: 0;
     cursor: pointer;
+
+    &:hover {
+        background-color: lighten($color: #313233, $amount: 30);
+    }
 }
 .birds{
     height: 104px;
@@ -134,4 +138,7 @@ a{
 }
 .lotties-wrapper{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 15rem ;
 }

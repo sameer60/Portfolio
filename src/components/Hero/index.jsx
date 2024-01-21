@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaLongArrowAltRight, FaReact, FaHtml5 } from "react-icons/fa";
 import { BiLogoJavascript, BiLogoTailwindCss } from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
-import "./index.css";
+import "./index.scss";
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
             captivating web experiences. I create clean, user-friendly designs
             and help businesses create beloved products for the web.
           </p>
-          <a href="#contact" >
+          <a href="#contact">
             <button className="get-in-touch-button">
               Get in touch &nbsp;
               <FaLongArrowAltRight />
