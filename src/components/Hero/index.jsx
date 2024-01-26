@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FaLongArrowAltRight, FaReact, FaHtml5 } from "react-icons/fa";
 import { BiLogoJavascript, BiLogoTailwindCss } from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
+import Fade from "react-reveal/Fade";
 import "./index.scss";
 
 const Hero = () => {
@@ -29,16 +30,15 @@ const Hero = () => {
             </button>
           </a>
         </motion.div>
-        <div className="hero-image-container">
-          <motion.img
-            initial={{ opacity: -1 }}
-            animate={{ opacity: [0.2, 1] }}
-            transition={{ duration: 1 }}
-            className="hero-image"
-            src="https://res.cloudinary.com/didtdrgsj/image/upload/v1689407086/c90dcd89-996e-43e2-92e7-4cdddab91c76_2-removebg-preview_rn7skp.png"
-            alt="Hero"
-          />
-        </div>
+        <Fade>
+          <div className="hero-image-container">
+            <img
+              className="hero-image"
+              src="https://res.cloudinary.com/didtdrgsj/image/upload/v1689407086/c90dcd89-996e-43e2-92e7-4cdddab91c76_2-removebg-preview_rn7skp.png"
+              alt="Hero"
+            />
+          </div>
+        </Fade>
       </div>
       <div className="skills-container">
         <div className="skill-box">

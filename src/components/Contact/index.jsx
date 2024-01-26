@@ -4,6 +4,7 @@ import emailLottie from "../../assets/emailLottie.json";
 import MessageSentLottie from "../../assets/MessageSentLottie.json";
 import clouds from "../../assets/clouds.json";
 import Lottie from "lottie-react";
+import Wave from 'react-wavify'
 import "./index.scss";
 
 export const Contact = () => {
@@ -91,6 +92,16 @@ export const Contact = () => {
           <Lottie className="lottie" animationData={emailLottie} />
         </div>
       </div>
+      <Wave fill='#9bc7e3'
+        paused={false}
+        style={{ display: 'flex', position: "absolute", bottom: 0 }}
+        options={{
+          height: 20,
+          amplitude: 60,
+          speed: 0.15,
+          points: 6
+        }}
+  />
     </div>
   );
 };

@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     position:static;
-    padding: 2rem 8rem;
+    padding: 4rem 8rem;
     background: #E4EBF5;
     background-size: cover;
     transition: ease all .5s;
@@ -26,7 +26,7 @@
     cursor: pointer;
     font-weight: 600;
     font-family: poppins;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 .link {
     text-decoration: none;
@@ -35,7 +35,7 @@
     margin-right: 15px;
     font-weight: 600;
     font-family: poppins;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin-left: 0.5rem;
 }
 @media (width <= 1280px) {
@@ -43,16 +43,10 @@
         width: 100%;
         display: flex;
         align-items: center;
+        flex-direction: column;
         padding: 2rem 6rem;
     }
-}
-@media (width <= 768px) {
-    .navbar-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     .navbar-left-container{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 }

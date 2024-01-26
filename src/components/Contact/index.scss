@@ -1,9 +1,8 @@
 .contact-container {
     height: 100vh;
-    background: url('/src/assets/layered-waves-haikei.svg');
     background-size: 120%;
     animation: moveWaves 5s linear infinite;
-    position:absolute;
+    position:relative;
     width: 100%;
     transition: all 2s;
 }
@@ -24,8 +23,9 @@
     margin:1.5rem 0rem;
 }
 .lottie-box{
-    height: 410px;
+    height: 430px;
     width: 400px;
+    scale: 1.4;
 }
 .lottie{
     filter: drop-shadow(3px 3px 4px black);
@@ -34,8 +34,8 @@
     display: flex;
     flex-direction: column;
     width: 35%;
-    padding: 0.6rem 1.5rem;
-    height: 60vh;
+    scale: 1.2;
+    padding: 1.5rem 1.5rem 1.5rem 4.4rem;
     border-radius: 1.4rem;
     box-shadow: -3px -3px 25px 5px #fff, 5px 5px 13px 7px #c8d0e7;
 }
@@ -110,10 +110,6 @@ a{
     filter: drop-shadow(2px 2px 3px #313233);
     border: 0;
     cursor: pointer;
-
-    &:hover {
-        background-color: lighten($color: #313233, $amount: 30);
-    }
 }
 .birds{
     height: 104px;
@@ -141,4 +137,5 @@ a{
     justify-content: space-between;
     width: 100%;
     padding-left: 15rem ;
+    margin: 5rem 0 10rem 0;
 }
