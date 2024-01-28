@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="hero-image-container">
             <img
               className="hero-image"
-              src="https://res.cloudinary.com/didtdrgsj/image/upload/v1689407086/c90dcd89-996e-43e2-92e7-4cdddab91c76_2-removebg-preview_rn7skp.png"
+              src="https://res.cloudinary.com/didtdrgsj/image/upload/v1706276852/IMG_20240125_161634_423-removebg-preview_1_tcwcxl.png"
               alt="Hero"
             />
           </div>

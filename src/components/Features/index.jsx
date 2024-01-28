@@ -1,10 +1,9 @@
-import React from "react";
 import { PiDeviceMobile } from "react-icons/pi";
 import { LuStars } from "react-icons/lu";
 import { SiReactos } from "react-icons/si";
 import Jump from "react-reveal/Jump";
 import Zoom from "react-reveal/Zoom";
-import "./index.css";
+import "./index.scss";
 
 const Features = () => {
   return (

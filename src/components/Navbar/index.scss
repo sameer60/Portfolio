@@ -7,7 +7,6 @@
     position:static;
     padding: 4rem 8rem;
     background: #E4EBF5;
-    background-size: cover;
     transition: ease all .5s;
 }
 .navbar-left-container{
@@ -17,7 +16,8 @@
 .navbar-links-container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
     width: fit-content;     
 }
 .logo-name{
@@ -30,17 +30,20 @@
 }
 .link {
     text-decoration: none;
-    color: #313233;
     cursor: pointer;
+    color: lighten($color: #525354, $amount: 10);
     margin-right: 15px;
     font-weight: 600;
     font-family: poppins;
     font-size: 1.8rem;
     margin-left: 0.5rem;
+
+    &:hover {
+        color: #4b4e51;
+    }
 }
 @media (width <= 1280px) {
     .navbar-container{
-        width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;

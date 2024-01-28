@@ -4,7 +4,7 @@ import emailLottie from "../../assets/emailLottie.json";
 import MessageSentLottie from "../../assets/MessageSentLottie.json";
 import clouds from "../../assets/clouds.json";
 import Lottie from "lottie-react";
-import Wave from 'react-wavify'
+import Wave from "react-wavify";
 import "./index.scss";
 
 export const Contact = () => {
@@ -48,13 +48,14 @@ export const Contact = () => {
           />
         ) : (
           <form ref={form} onSubmit={sendEmail} className="form-container">
+            <h1 className="contact-me-heading">CONTACT ME</h1>
             <div className="label-input-box">
               <label className="label-field" htmlFor="from_name">
                 Name
               </label>
               <input
                 required
-                placeholder="Elon Musk"
+                // placeholder="Elon Musk"
                 className="input-field"
                 type="text"
                 name="from_name"
@@ -68,7 +69,7 @@ export const Contact = () => {
                 className="input-field"
                 type="email"
                 name="from_email"
-                placeholder="elonmusk@example.com"
+                // placeholder="elonmusk@example.com"
                 required
               />
             </div>
@@ -78,7 +79,7 @@ export const Contact = () => {
               </label>
               <textarea
                 required
-                placeholder="Hi Sameer, I'd love to talk to you about this project we're working on ..."
+                // placeholder="Hi Sameer, I'd love to talk to you about this project we're working on ..."
                 className="textarea-field"
                 name="message"
               />
@@ -92,16 +93,19 @@ export const Contact = () => {
           <Lottie className="lottie" animationData={emailLottie} />
         </div>
       </div>
-      <Wave fill='#9bc7e3'
-        paused={false}
-        style={{ display: 'flex', position: "absolute", bottom: 0 }}
-        options={{
-          height: 20,
-          amplitude: 60,
-          speed: 0.15,
-          points: 6
-        }}
-  />
+      <div className="waves">
+        <Wave
+          fill="#9bc7e3"
+          paused={false}
+          style={{ display: "flex", position: "absolute", bottom: 0 }}
+          options={{
+            height: 15,
+            amplitude: 60,
+            speed: 0.15,
+            points: 6,
+          }}
+        />
+      </div>
     </div>
   );
 };
