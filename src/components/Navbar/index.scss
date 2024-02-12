@@ -1,55 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-.navbar-container{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position:static;
-    padding: 4rem 8rem;
-    background: #E4EBF5;
-    transition: ease all .5s;
-}
-.navbar-left-container{
-    display: flex;
-    align-items: center;
-}
-.navbar-links-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: fit-content;     
-}
-.logo-name{
-    text-decoration: none;
-    color: #313233;
-    cursor: pointer;
-    font-weight: 600;
-    font-family: poppins;
-    font-size: 2rem;
-}
-.link {
-    text-decoration: none;
-    cursor: pointer;
-    color: lighten($color: #525354, $amount: 10);
-    margin-right: 15px;
-    font-weight: 600;
-    font-family: poppins;
-    font-size: 1.8rem;
-    margin-left: 0.5rem;
 
-    &:hover {
-        color: #4b4e51;
-    }
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  padding: 4rem 8rem;
+  background: #e4ebf5;
+  transition: ease all 0.5s;
+
+  @media (max-width: 1280px) {
+    padding: 2rem 6rem;
+    flex-direction: column;
+  }
 }
-@media (width <= 1280px) {
-    .navbar-container{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 2rem 6rem;
-    }
-    .navbar-left-container{
-        margin-bottom: 20px;
-    }
+
+.navbar-left-container {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1280px) {
+    margin-bottom: 20px;
+  }
+}
+
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: fit-content;
+
+  @media (max-width: 1280px) {
+    // flex-direction: column;
+  }
+}
+
+.logo-name {
+  text-decoration: none;
+  color: #313233;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: poppins;
+  font-size: 2rem;
+
+  @media (max-width: 1280px) {
+    text-align: center;
+  }
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: lighten($color: #525354, $amount: 10);
+  margin-right: 15px;
+  font-weight: 600;
+  font-family: poppins;
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+
+  &:hover {
+    color: #4b4e51;
+  }
+
+  @media (max-width: 1280px) {
+    text-align: center;
+    margin: 10px 0;
+  }
 }
